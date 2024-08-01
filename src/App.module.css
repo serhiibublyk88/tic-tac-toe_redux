@@ -1,0 +1,73 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.resetButton {
+  font-family: 'Century Gothic', sans-serif; 
+  margin-top: 60px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: gray;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  width: 306px;
+  margin-top: 20px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-size: 2rem;
+  border: none;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.cell:nth-child(3n) {
+  border-right: none;
+}
+
+.cell:nth-child(n+7) {
+  border-bottom: none;
+}
+
+.information {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.currentPlayer {
+  color: black;
+}
+
+.result {
+  font-size: 2rem;
+}
